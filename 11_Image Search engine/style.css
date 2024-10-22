@@ -6,20 +6,31 @@
 }
 
 body{
-    background: rgb(105, 198, 191);
-    color: rgb(30, 31, 31);
+    
+    color: rgb(6, 227, 227);
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
 }
 h1{
     font-weight: 600;
     text-align: center;
     margin: 100px auto 50px;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 form {
     width: 90%;
     max-width: 600px;
     margin: auto;
     height: 80px;
-    background: #323a97;
+    background: #8b8c94;
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -37,7 +48,7 @@ form input {
 form button {
     padding: 0 40px;
     height: 100%;
-    background: #ab3939;
+    background: #d18c8c;
     color: white;
     font-size: 18px;
     border: 0;
@@ -46,9 +57,14 @@ form button {
     border-bottom-right-radius: 8px;
     cursor: pointer;
 }
+.loading {
+    text-align: center;
+    display: none;
+    color: #007bff;
+  }
 
 ::placeholder{
-    color: #FFF;
+    color: #eeeaea;
     font-size: 18px;
 }
 #show-more-btn{

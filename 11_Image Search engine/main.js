@@ -4,10 +4,16 @@ const searchForm = document.getElementById('search-form')
 const searchBox = document.getElementById('search-box')
 const showResult = document.getElementById('show-result')
 const showMoreBtn = document.getElementById('show-more-btn')
+const loading = document.getElementById('loading');
+
 
 
 let keyword = "";
 let page = 1;
+
+function toggleLoading(show) {
+    loading.style.display = show ? 'block' : 'none';
+}
 
 async function searchImages() {
     keyword = searchBox.value;
